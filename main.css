@@ -1,0 +1,135 @@
+body {
+	font-family: verdana;
+}
+
+
+nav {
+	background-color: black;
+	margin: 0;
+	height: 50px;
+	font-family: verdana;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	text-align: right;
+}
+
+.nav-logo {
+	color: #ddd;
+	float: left;
+	font-size: 30px;
+	font-family: fantasy;
+	padding-top: 0;	
+}
+
+.nav-logo img {
+	height: 30px;
+	width: 30px;
+	margin-left: 5px;
+	padding-top: 15px;
+}
+
+nav li {
+	color: #ddd;
+	display: inline-block;
+	padding: 30px 5px 0px 0px;
+	margin: 0;
+}
+
+main {
+	margin: 0;
+	padding: 0;
+	background: -webkit-linear-gradient(left, rgba(149,149,149,.9) 0%,rgba(13,13,13,.9) 46%,rgba(1,1,1,.9) 50%,rgba(10,10,10,.9) 53%,rgba(78,78,78,.9) 76%,rgba(56,56,56,.9) 87%,rgba(27,27,27,.9) 100%), url('dogsmain.jpg');
+	background-size: contain;
+	height: 500px;
+	text-align: center;
+}
+
+main h1 {
+	margin: 0;
+	padding-top: 15px;
+	color: #ddd;
+	font-family: fantasy;
+	text-align: center;
+}
+
+main p {
+	color: rgb(120, 115, 115);
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+.submain {
+	background-color: black;
+	height: 300px;
+	text-align: center;
+}
+
+.submain h1 {
+	margin: 0;
+	color: #ddd;
+	text-align: center;
+	padding: 40px 0 0 0;
+	font-family: fantasy;
+}
+
+.submain button {
+	background-color: #41a5a3;
+	border-radius: 1000px;
+	text-align: center;
+	margin: 0;
+	padding: 2px;
+	color: rgb(120, 115, 115);
+	text-shadow: 0 0 0 transparent;
+	text-transform: uppercase;
+	text-decoration: none;
+	cursor: pointer;
+	border: 0;
+	width: 90px;
+	height: 30px;
+}
+
+.submain img {
+	height: 50px;
+	width: 50px;
+	padding-top: 110px;
+}
+
+.bottom {
+	height: 100px;
+	background-color: #222;
+	text-align: center;
+	color: rgb(120, 115, 115);
+	font-size: 10px;
+}
+
+.bottom button {
+	background-color: black;
+	color: rgb(120, 115, 115);
+	border-radius: 6px;
+	border: none;
+	font-size: 12px;
+	width: 80px;
+	margin-top: 40px;
+}
+
+footer {
+	background-color: black;
+	margin: 0;
+	text-align: center;
+	height: 200px;
+}
+
+footer ul {
+	margin: 0;
+}
+
+footer li {
+	display: inline-block;
+	color: #ddd;
+	font-family: fantasy;
+	margin-top: 80px;
+}
+
