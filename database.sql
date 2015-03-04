@@ -1,4 +1,5 @@
 
+DROP DATABASE IF EXISTS rockitdogs;
 CREATE DATABASE rockitdogs;
 use rockitdogs;
 
@@ -32,11 +33,11 @@ user_id INT( 11 ),
 
 CREATE TABLE  vet (
 vet_id INT AUTO_INCREMENT PRIMARY KEY,
- dog_id INT(),
- address_id INT(),
+ dog_id INT,
+ address_id INT,
  first_name VARCHAR( 255 ),
  last_name VARCHAR( 255 ),
- phone VARCHAR(),
+ phone VARCHAR(255),
  business_name VARCHAR( 255 ),
  datetime_added DATETIME
  );
@@ -45,8 +46,8 @@ vet_id INT AUTO_INCREMENT PRIMARY KEY,
 
 CREATE TABLE  image_comment (
 image_comment_id INT AUTO_INCREMENT PRIMARY KEY,
- image_id INT(),
- user_id INT(),
+ image_id INT,
+ user_id INT,
  comment VARCHAR( 255 )
 );
 
@@ -61,8 +62,8 @@ CREATE TABLE  image (
 
 
 CREATE TABLE  dog_image (
- image_id INT AUTO_INCREMENT,
- dog_id INT(),
+ image_id INT AUTO_INCREMENT PRIMARY KEY,
+ dog_id INT,
  primary_image TINYINT(1)
  );
 
@@ -70,7 +71,7 @@ CREATE TABLE  dog_image (
 CREATE TABLE  love (
  user_id INT NOT NULL,
  image_id VARCHAR(255) NOT NULL ,
-PRIMARY KEY (  `image_id`, `image_id` )
+PRIMARY KEY (  `user_id`, `image_id` )
 );
 
 
@@ -80,7 +81,7 @@ CREATE TABLE  address (
  address2 VARCHAR(255),
  city VARCHAR( 255 ),
  state VARCHAR( 255 ),
- zip INT()
+ zip INT
  );
 
 
