@@ -43,15 +43,12 @@ vet_id INT AUTO_INCREMENT PRIMARY KEY,
  );
 
 
-
 CREATE TABLE  image_comment (
 image_comment_id INT AUTO_INCREMENT PRIMARY KEY,
  image_id INT,
  user_id INT,
  comment VARCHAR( 255 )
 );
-
-
 
 
 CREATE TABLE  image (
