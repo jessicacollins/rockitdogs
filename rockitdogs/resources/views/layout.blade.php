@@ -1,6 +1,3 @@
-@extends('app')
-
-@section('content')
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +9,7 @@
 <body>
 	<nav>
 		<div class="nav-logo">
-			<span><img src="images/logo.png"</span>
+			<span><img src="/images/logo.png"</span>
 			<span>RockItDogs</span>
 		</div>
 		<ul>
@@ -32,7 +29,7 @@
 		<h1>Give Love EryDay</h1>
 		<button>Love</button>
 		<div>
-			<img src="images/logo.png">
+			<img src="/images/logo.png">
 		</div>
 	</div>
 	<div class="bottom">
@@ -49,4 +46,4 @@
 	</footer>
 </body>
 </html>
-@endsection
+
