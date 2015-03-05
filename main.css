@@ -1,5 +1,7 @@
 body {
 	font-family: verdana;
+	background-color: black;
+	color: #ddd;
 }
 
 nav {
@@ -56,48 +58,22 @@ main h1 {
 
 main p {
 	color: rgb(120, 115, 115);
-	padding: 0;
+	padding-top: 25px;
 	margin: 0;
 	text-align: center;
 }
 
-p{
+main form {
+	padding-top: 100px;
+}
+
+main form button {
+	margin-top: 10px;
+	color: black;
+}
+
+p {
 	color: white;
-}
-.submain {
-	background-color: black;
-	height: 300px;
-	text-align: center;
-}
-
-.submain h1 {
-	margin: 0;
-	color: #ddd;
-	text-align: center;
-	padding: 40px 0 0 0;
-	font-family: fantasy;
-}
-
-.submain button {
-	background-color: #41a5a3;
-	border-radius: 1000px;
-	text-align: center;
-	margin: 0;
-	padding: 2px;
-	color: rgb(120, 115, 115);
-	text-shadow: 0 0 0 transparent;
-	text-transform: uppercase;
-	text-decoration: none;
-	cursor: pointer;
-	border: 0;
-	width: 90px;
-	height: 30px;
-}
-
-.submain img {
-	height: 50px;
-	width: 50px;
-	/*padding-top: 110px;*/
 }
 
 .bottom {
