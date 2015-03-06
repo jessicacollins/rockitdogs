@@ -12,6 +12,7 @@ user_id INT AUTO_INCREMENT PRIMARY KEY,
  password CHAR( 64 ),
  first_name VARCHAR( 20 ),
  last_name VARCHAR( 20 ),
+ remember_token VARCHAR(255),
  datetime_added DATETIME
 );
 
