@@ -6,7 +6,8 @@
 
 @section('content')
 	<main>
-		<div class="header">	
+		<div class="header">
+			<a href="/editdogprofile">Edit</a>
 			<h1>Welcome To Your Dog's Profile Page</h1>
 			<p>This page contains all the info about your dog as well as all of it's adorable photos!<p>
 		</div>

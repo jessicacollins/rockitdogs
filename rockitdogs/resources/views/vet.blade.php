@@ -7,6 +7,7 @@
 @section('content')
 	<main>
 		<div class="head">
+			<a href="/editvet"></a>
 			<h1>Welcome to the vet page!</h1>
 			<p>This page is personalized for each vet</p>
 		</div>
