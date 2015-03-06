@@ -5,8 +5,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>RockIt Dogs</title>
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="/css/normalize.css">
+	<link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 	<nav>
@@ -19,13 +19,19 @@
 			<li>Browse</li>
 			<li>About</li>
 			<li>ContactUs</li>
-			<li>LogIn</li>
-			<li>Register</li>
+			@if(Auth::guest())
+			<li><a href="/auth/login">Login</a></li>
+			<li><a href="/auth/register">Register</a></li>
+			@else
+			<li><a href="/auth/logout">Logout</a></li>
+			@endif
+
 		</ul>
 	</nav>
 	<main>
 		<h1>Meet rockIT Dogs</h1>
 		<p>love your life, love your dogs<p>	
+		@yield('content')
 	</main>
 	<div class="submain">
 		<h1>Give Love EryDay</h1>
