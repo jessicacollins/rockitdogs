@@ -4,7 +4,7 @@ CREATE DATABASE rockitdogs;
 use rockitdogs;
 
 CREATE TABLE  user (
-user_id INT AUTO_INCREMENT PRIMARY KEY,
+ user_id INT AUTO_INCREMENT PRIMARY KEY,
  address_id INT( 11 ),
  image_id INT( 11 ),
  username VARCHAR( 50 ),
@@ -13,7 +13,8 @@ user_id INT AUTO_INCREMENT PRIMARY KEY,
  first_name VARCHAR( 20 ),
  last_name VARCHAR( 20 ),
  remember_token VARCHAR(255),
- datetime_added DATETIME
+ created_at DATETIME,
+ updated_at DATETIME
 );
 
 
