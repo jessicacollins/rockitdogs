@@ -1,4 +1,4 @@
-@extends('app')
+@extends('layout')
 
 @section('header')
 
@@ -11,6 +11,9 @@
 			<p>This page contains all the info about your dog as well as all of it's adorable photos!<p>
 		</div>
 		<div class="profile">
+			<div class="dogprofilepicture">
+				<img src="" alt="">
+			</div>
 			<img src="" alt="">
 			<h3>Here is all of your dog's info</h3>
 			<div>Sir Charles</div>
