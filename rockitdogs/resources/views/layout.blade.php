@@ -32,8 +32,7 @@
 		@show
 	</header>
 	<main>
-		@yield('content')	
-
+		@yield('main_content')	
 	</main>
 		@section('footer')
 			<div class="bottom">

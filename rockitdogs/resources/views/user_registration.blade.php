@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('header')
-@endsection
+@show
 
 @section('main_content')
 <p>Already have an account? <a href="signIn.html">signIn</a></p>
@@ -23,7 +23,7 @@
 		</div>
 		<button>Create Account</button>
 	</form>
-@endsection
+@show
 
 @section('footer')
-@endsection
+@show

@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('header')
-@endsection
+@show
 
 @section('main_content')
 	<div class="head">
@@ -15,7 +15,7 @@
 		<div>Contact #: 212-877-9109</div>
 		<div>Business Name: WeLikeCake</div>
 	</div>
-@endsection
+@show
 
 @section('footer')
-@endsection
+@show
