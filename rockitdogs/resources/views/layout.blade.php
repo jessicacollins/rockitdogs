@@ -50,7 +50,7 @@
 				<div class="footer-logo">
 					<img src="logo.png">
 				</div>
-		</footer>
+			</footer>
 		@show
 </body>
 </html>
