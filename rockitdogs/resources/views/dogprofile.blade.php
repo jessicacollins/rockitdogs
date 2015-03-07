@@ -1,7 +1,8 @@
+
 @extends('layout')
 
 @section('header')
-@show
+@endsection
 
 @section('main_content')
 	<div class="header">
@@ -24,7 +25,7 @@
 		<div>Swagtastic</div>
 		<div>827689</div>
 	</div>
-@show
+@endsection
 
 @section('footer')
-@show
+@endsection

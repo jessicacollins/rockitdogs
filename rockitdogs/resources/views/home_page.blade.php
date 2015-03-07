@@ -8,5 +8,6 @@
 <p>love your life, love your dogs<p>
 @show
 
+
 @section('footer')
 @show

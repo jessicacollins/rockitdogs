@@ -1,6 +1,6 @@
 @extends('app')
 
-@section('content')
+@section('main_content')
 
 you are logged in 
 

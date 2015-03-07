@@ -18,8 +18,12 @@ Route::get('/', function() {
 
 Route::get('home','HomeController@index');
 
-Route::get('test', function () {
-	return view('homepage');
+Route::get('hometest', function () {
+	return view('home_page');
+});
+
+Route::get('dogprofile', function () {
+	return view('dogprofile');
 });
 
 Route::controllers([
