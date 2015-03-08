@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function() {
-	return view('layout');
+	return view('homePage');
 });
 //Route::get('/','WelcomeController@index');
 
@@ -23,7 +23,11 @@ Route::get('hometest', function () {
 });
 
 Route::get('dogprofile', function () {
-	return view('dogprofile');
+	return view('dogProfile');
+});
+
+Route::get('editdogprofile', function () {
+	return view('editDogProfile');
 });
 
 Route::get('community', function () {
@@ -36,6 +40,14 @@ Route::get('userprofile', function () {
 
 Route::get('vet', function () {
 	return view('vet');
+});
+
+Route::get('/auth/login', function () {
+	return view('/auth/Login');
+});
+
+Route::get('register', function () {
+	return view('/auth/register');
 });
 
 Route::controllers([

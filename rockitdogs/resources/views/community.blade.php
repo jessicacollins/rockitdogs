@@ -6,7 +6,7 @@
 
 		<div class="dog-image">
 			<div class="profile-image">
-				<img src="/logo.png">
+				<img src="/images/logo.png">
 			</div>
 			<div class="love"></div>
 			<div class="comment-thread"></div>
@@ -14,7 +14,7 @@
 
 		<div class="dog-image">
 			<div class="profile-image">
-				<img src="/logo.png">
+				<img src="/images/logo.png">
 			</div>
 			<div class="love"></div>
 			<div class="comment-thread"></div>
@@ -22,7 +22,7 @@
 
 		<div class="dog-image">
 			<div class="profile-image">
-				<img src="/logo.png">
+				<img src="/images/logo.png">
 			</div>
 			<div class="love"></div>
 			<div class="comment-thread"></div>
@@ -30,7 +30,7 @@
 
 		<div class="dog-image">
 			<div class="profile-image">
-				<img src="/logo.png">
+				<img src="/images/logo.png">
 			</div>
 			<div class="love"></div>
 			<div class="comment-thread"></div>
@@ -38,7 +38,7 @@
 
 		<div class="dog-image">
 			<div class="profile-image">
-				<img src="/logo.png">
+				<img src="/images/logo.png">
 			</div>
 			<div class="love">
 				
@@ -50,7 +50,7 @@
 
 		<div class="dog-image">
 			<div class="profile-image">
-				<img src="/logo.png">
+				<img src="/images/logo.png">
 
 			</div>
 			<div class="love"></div>

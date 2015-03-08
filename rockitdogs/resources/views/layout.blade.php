@@ -13,7 +13,7 @@
 		@section('header')
 			<nav>
 				<div class="nav-logo">
-					<span><a href="/hometest"><img src="/images/logo.png"></d></span>
+					<span><a href="/"><img src="/images/logo.png"></d></span>
 					<span>RockItDogs</span>
 				</div>
 					<ul>
