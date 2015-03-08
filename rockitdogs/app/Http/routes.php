@@ -34,6 +34,11 @@ Route::get('editdogprofile', function () {
 	return view('editDogProfile');
 });
 
+
+Route::get('dogimage', function () {
+	return view('dogImage');
+});
+
 Route::get('community', function () {
 	return view('community');
 });
