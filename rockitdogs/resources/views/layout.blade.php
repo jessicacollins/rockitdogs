@@ -18,7 +18,7 @@
 				</div>
 					<ul>
 					<li>Home</li>
-					<li>Browse</li>
+					<li><a href="/community">Browse</a></li>
 					<li>About</li>
 					<li>ContactUs</li>
 					@if(Auth::guest())
