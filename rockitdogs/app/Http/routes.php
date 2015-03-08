@@ -30,6 +30,13 @@ Route::get('community', function () {
 	return view('community');
 });
 
+Route::get('userprofile', function () {
+	return view('userProfile');
+});
+
+Route::get('vet', function () {
+	return view('vet');
+});
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
