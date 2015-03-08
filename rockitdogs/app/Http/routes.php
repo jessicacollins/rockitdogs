@@ -50,6 +50,14 @@ Route::get('register', function () {
 	return view('/auth/register');
 });
 
+Route::get('about', function () {
+	return view('aboutUs');
+});
+
+Route::get('contact', function () {
+	return view('contact');
+});
+
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
