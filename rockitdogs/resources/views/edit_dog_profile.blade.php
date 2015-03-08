@@ -1,8 +1,5 @@
 @extends('layout')
 
-@section('header')
-@show
-
 @section('main_content')
 		<h1>Here you can edit your dog's profile</h1>
 		<form action="/dogprofile">
@@ -17,7 +14,4 @@
 			<button>Submit</button>
 		</form>
 	</main>
-@show
-
-@section('footer')
-@show
+@stop

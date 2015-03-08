@@ -12,7 +12,7 @@
 		@section('header')
 			<nav>
 				<div class="nav-logo">
-					<span><img src="logo.png"</span>
+					<span><img src="/images/logo.png"</span>
 					<span>RockItDogs</span>
 				</div>
 					<ul>
@@ -47,7 +47,7 @@
 					<li>ContactUs</li>
 				</ul>
 				<div class="footer-logo">
-					<img src="logo.png">
+					<img src="/images/logo.png">
 				</div>
 			</footer>
 		@show

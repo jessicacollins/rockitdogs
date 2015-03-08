@@ -1,8 +1,5 @@
 @extends('layout')
 
-@section('header')
-@show
-
 @section('main_content')
 <p>Already have an account? <a href="signIn.html">signIn</a></p>
 	<form action="">
@@ -23,7 +20,5 @@
 		</div>
 		<button>Create Account</button>
 	</form>
-@show
+@stop
 
-@section('footer')
-@show

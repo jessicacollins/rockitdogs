@@ -1,8 +1,5 @@
 @extends('layout')
 
-@section('header')
-@show
-
 @section('main_content')
 	<div class="head">
 		<a href="/editvet"></a>
@@ -15,7 +12,4 @@
 		<div>Contact #: 212-877-9109</div>
 		<div>Business Name: WeLikeCake</div>
 	</div>
-@show
-
-@section('footer')
-@show
+@stop

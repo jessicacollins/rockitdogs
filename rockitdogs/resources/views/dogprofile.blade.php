@@ -1,9 +1,6 @@
 
 @extends('layout')
 
-@section('header')
-@endsection
-
 @section('main_content')
 	<div class="header">
 		<a href="/editdogprofile">Edit</a>
@@ -25,7 +22,5 @@
 		<div>Swagtastic</div>
 		<div>827689</div>
 	</div>
-@endsection
+@stop
 
-@section('footer')
-@endsection

@@ -1,8 +1,5 @@
 @extends('layout')
 
-@section('header')
-@show
-
 @section('main_content')
 <div>
 	<h1>Sign In</h1>
@@ -16,7 +13,4 @@
 		<button>Log In</button>
 	</form>
 </div>
-@show
-
-@section('footer')
-@show
+@stop
