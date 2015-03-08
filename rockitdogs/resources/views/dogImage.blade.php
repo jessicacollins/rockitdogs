@@ -2,6 +2,12 @@
 
 @section('main_content')
 
-<h1>This is the Dog Image Page</h1>
+		<div class="dog-image">
+			<div class="profile-image">
+				<img src="/images/logo.png">
+			</div>
+			<div class="love"></div>
+			<div class="comment-thread"></div>
+		</div>
 
 @stop
