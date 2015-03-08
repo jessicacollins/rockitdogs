@@ -38,6 +38,10 @@ Route::get('userprofile', function () {
 	return view('userProfile');
 });
 
+Route::get('edituser', function () {
+	return view('editUser');
+});
+
 Route::get('vet', function () {
 	return view('vet');
 });
