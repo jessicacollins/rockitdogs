@@ -26,6 +26,11 @@ Route::get('dogprofile', function () {
 	return view('dogprofile');
 });
 
+Route::get('community', function () {
+	return view('community');
+});
+
+
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
