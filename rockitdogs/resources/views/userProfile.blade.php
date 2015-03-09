@@ -6,10 +6,9 @@
 			<img src="logo.jpg" >
 		</div>
 		<a href="">Edit Profile</a>
-		<div>Username</div>
-		<div>First Name</div>
-		<div>Last Name</div>
-		<div>Email</div>
+		<div>{{$user->first_name}}</div>
+		<div>{{$user->last_name}}</div>
+		<div>{{$user->email}}</div>
 
 
 		<div class="dog-profile-pic" style="background-color:red">

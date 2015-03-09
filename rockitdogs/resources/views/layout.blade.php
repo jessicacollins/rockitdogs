@@ -26,6 +26,7 @@
 					<li><a href="/auth/register">Register</a></li>
 					@else
 					<li><a href="/auth/logout">Logout</a></li>
+					<li><a href="/userprofile">Profile</a></li>
 					@endif
 
 				</ul>

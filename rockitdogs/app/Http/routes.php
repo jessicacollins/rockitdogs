@@ -17,6 +17,9 @@ Route::get('/', function() {
 //Route::get('/','WelcomeController@index');
 
 Route::get('home','HomeController@index');
+// Route::get('profile','UserController@profile');
+
+Route::get('/profile', 'UserController@showProfile');
 
 Route::get('hometest', function () {
 	return view('home_page');
@@ -55,7 +58,7 @@ Route::get('vet', function () {
 	return view('vet');
 });
 
-Route::get('/auth/login', function () {
+Route::get('/login', function () {
 	return view('/auth/Login');
 });
 
