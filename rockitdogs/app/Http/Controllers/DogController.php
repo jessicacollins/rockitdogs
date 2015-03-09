@@ -20,13 +20,32 @@ class DogController extends Controller {
 
 		$user_id = Request::input('user_id');
 		$name = Request::input('name');
+		$tagline = Request::input('tagline');
+		$birthday = Request::input('birthday');
+		$breed = Request::input('breed');
+		$gender = Request::input('gender');
+		$weight = Request::input('weight');
+		$temperament = Request::input('temperament');
+		$license_id = Request::input('license_id');
+
 
 		$dog = new Dog();
 		$dog->user_id = $user_id;
 		$dog->name = $name;
+		$dog->tagline = $tagline;
+		$dog->birthday = $birthday;
+		$dog->breed = $breed;
+		$dog->gender = $gender;
+		$dog->weight = $weight;
+		$dog->temperament = $temperament;
+		$dog->license_id = $license_id;
+		$dog->datetime_added = date('Y-m-d H:i:s');
 		$dog->save();
 
-		return redirect('/dogprofile');
+		$pdo = DB::getPdo();
+		$dogId = $pdo->lastInsertId();
+
+		return redirect('/dogprofile/' . $dogId);
 	}
 
 }
