@@ -13,7 +13,7 @@ class UserController extends Controller {
 	public function showProfile()
 	{
 		$u = Auth::user();
-		return view('profile', ['user'=>$u]);
+		return view('userProfile', ['user'=>$u]);
 	}
 
 }

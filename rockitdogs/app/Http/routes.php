@@ -19,7 +19,7 @@ Route::get('/', function() {
 Route::get('home','HomeController@index');
 // Route::get('profile','UserController@profile');
 
-Route::get('/profile', 'UserController@showProfile');
+Route::get('/userprofile', 'UserController@showProfile');
 
 Route::get('hometest', function () {
 	return view('home_page');
@@ -46,9 +46,6 @@ Route::get('community', function () {
 	return view('community');
 });
 
-Route::get('userprofile', function () {
-	return view('userProfile');
-});
 
 Route::get('edituser', function () {
 	return view('editUser');
