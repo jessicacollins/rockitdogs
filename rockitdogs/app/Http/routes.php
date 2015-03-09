@@ -25,7 +25,8 @@ Route::get('hometest', function () {
 	return view('home_page');
 });
 
-Route::get('/adddog/', 'UserController@addDog');
+Route::get('/dog/add', 'DogController@addDogForm');
+Route::post('/dog/add', 'DogController@addDog');
 
 Route::get('dogprofile', function () {
 	return view('dogProfile');
