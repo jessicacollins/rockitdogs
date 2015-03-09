@@ -1,8 +1,8 @@
 <?php 
-
 namespace App\Models;
-use DB;
-use App\Library\Sql;
+
+//use DB;
+//use App\Library\Sql;
 
 
 class Dog extends Model {
@@ -10,12 +10,12 @@ class Dog extends Model {
     protected static $key = 'dog_id';
 
 
-    public function 
+  //   public function 
 
-    	$dog = new Dog(); 
+  //   	$dog = new Dog(); 
 
-		$dog->name  = 'William';
+		// $dog->name  = 'William';
 
-		$dog_id = $dog->save();
+		// $dog_id = $dog->save();
 
 }
