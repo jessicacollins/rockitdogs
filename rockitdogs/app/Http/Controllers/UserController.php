@@ -1,6 +1,10 @@
 <?php namespace App\Http\Controllers;
 
 use Auth;
+use Request;
+use DB;
+use App\Library\Sql;
+use App\Models\User;
 
 class UserController extends Controller {
 
@@ -16,6 +20,9 @@ class UserController extends Controller {
 		return view('userProfile', ['user'=>$u]);
 	}
 
-
+	public function showEdit($user_id) {
+		$user = new User($user_id);
+		return view('editUser', ['user'=>$user]);
+	}
 
 }
