@@ -2,14 +2,10 @@ body {
 	font-family: verdana;
 	color: white;
 }
+
 input{
 	color: black;
 }
-
-.profile {
-	color: black;
-}
-
 
 nav {
 	background-color: black;
