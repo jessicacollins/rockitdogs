@@ -43,9 +43,9 @@ class DogController extends Controller {
 		$dog->save();
 
 		$pdo = DB::getPdo();
-		$dogId = $pdo->lastInsertId();
+		$dog_id = $pdo->lastInsertId();
 
-		return redirect('dogprofile' . $dog_id);
+		return redirect('dogprofile/' . $dog_id);
 	}
 
 	public function getDog($dog_id) {
