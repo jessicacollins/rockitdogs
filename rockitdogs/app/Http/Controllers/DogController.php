@@ -49,10 +49,10 @@ class DogController extends Controller {
 	}
 
 	public function getDog($dog_id) {
-		$dog = new Dog($dog_id);
+		$dog_id = new Dog($dog_id);
 
 
-		return view('dogProfile', ['dog'=>$dog]);
+		return view('dogprofile', ['dog'=>$dog_id]);
 	}
 
 	public function showEdit($dog_id) {
