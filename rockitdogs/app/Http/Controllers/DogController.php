@@ -50,14 +50,6 @@ class DogController extends Controller {
 
 	public function getDog($dog_id) {
 		$dog = new Dog($dog_id);
-			// echo $dog->name;
-			// echo $dog->tagline;
-			// echo $dog->birthday;
-			// echo $dog->breed;
-			// echo $dog->gender;
-			// echo $dog->weight;
-			// echo $dog->temperament;
-			// echo $dog->license_id;
 
 
 		return view('dogProfile', ['dog'=>$dog]);
@@ -69,7 +61,7 @@ class DogController extends Controller {
 	}
 
 	public function edit($dog_id) {
-		$dog = new Dog();
+		$dog = new Dog($dog_id);
 		$dog->user_id = $user_id;
 		$dog->name = $name;
 		$dog->tagline = $tagline;
@@ -82,7 +74,7 @@ class DogController extends Controller {
 		$dog->datetime_added = date('Y-m-d H:i:s');
 		$dog->save();
 
-		return redirect('/dogprofile/' . $dogId);
+		return redirect('/dogprofile/' . $dog_id);
 
 	}
 
