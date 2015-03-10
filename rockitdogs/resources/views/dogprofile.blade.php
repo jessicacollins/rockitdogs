@@ -3,7 +3,7 @@
 
 @section('main_content')
 	<div class="header">
-		<a href="/editdogprofile">Edit</a>
+		
 		<h1>Welcome To Your Dog's Profile Page</h1>
 		<p>This page contains all the info about your dog as well as all of it's adorable photos!<p>
 	</div>
@@ -13,14 +13,15 @@
 		</div>
 		<img src="" alt="">
 		<h3>Here is all of your dog's info</h3>
-		<div>Sir Charles</div>
-		<div>"I am the classiest dog you will ever meet"</div>
-		<div>2012/03/02</div>
-		<div>Pug</div>
-		<div>Male</div>
-		<div>20 llbs</div>
-		<div>Swagtastic</div>
-		<div>827689</div>
+		<div>{{$dog->name}}</div>
+		<div>{{$dog->tagline}}</div>
+		<div>{{$dog->birthday}}</div>
+		<div>{{$dog->breed}}</div>
+		<div>{{$dog->gender}}</div>
+		<div>{{$dog->weight}}</div>
+		<div>{{$dog->temperament}}</div>
+		<div>{{$dog->license_id}}</div>
 	</div>
+	<a href="/dog/edit/{{$dog->dog_id}}">Edit</a>
 @stop
 

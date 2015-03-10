@@ -45,7 +45,45 @@ class DogController extends Controller {
 		$pdo = DB::getPdo();
 		$dogId = $pdo->lastInsertId();
 
+		return redirect('dogprofile' . $dog_id);
+	}
+
+	public function getDog($dog_id) {
+		$dog = new Dog($dog_id);
+			// echo $dog->name;
+			// echo $dog->tagline;
+			// echo $dog->birthday;
+			// echo $dog->breed;
+			// echo $dog->gender;
+			// echo $dog->weight;
+			// echo $dog->temperament;
+			// echo $dog->license_id;
+
+
+		return view('dogProfile', ['dog'=>$dog]);
+	}
+
+	public function showEdit($dog_id) {
+		$dog = new Dog($dog_id);
+		return view('editDogProfile', ['dog'=>$dog]);
+	}
+
+	public function edit($dog_id) {
+		$dog = new Dog();
+		$dog->user_id = $user_id;
+		$dog->name = $name;
+		$dog->tagline = $tagline;
+		$dog->birthday = $birthday;
+		$dog->breed = $breed;
+		$dog->gender = $gender;
+		$dog->weight = $weight;
+		$dog->temperament = $temperament;
+		$dog->license_id = $license_id;
+		$dog->datetime_added = date('Y-m-d H:i:s');
+		$dog->save();
+
 		return redirect('/dogprofile/' . $dogId);
+
 	}
 
 }
