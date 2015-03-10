@@ -43,9 +43,9 @@ class DogController extends Controller {
 		$dog->save();
 
 		$pdo = DB::getPdo();
-		$dogId = $pdo->lastInsertId();
+		$dog_id = $pdo->lastInsertId();
 
-		return redirect('dogprofile' . $dog_id);
+		return redirect('dogprofile/' . $dog_id);
 	}
 
 	public function getDog($dog_id) {
@@ -74,7 +74,7 @@ class DogController extends Controller {
 		$dog->datetime_added = date('Y-m-d H:i:s');
 		$dog->save();
 
-		return redirect('/dogprofile/' . $dog_id);
+		return redirect('dogprofile/' . $dog_id);
 
 	}
 
