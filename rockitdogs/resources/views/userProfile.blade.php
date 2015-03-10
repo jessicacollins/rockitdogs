@@ -14,7 +14,7 @@
 		<div class="dog-profile-pic" style="background-color:red">
 			<img src="logo.jpg">	
 		</div>
-		<a href="">Add Dog</a>
+		<a href="dog/add">Add Dog</a>
 	</div>
 
 @stop
