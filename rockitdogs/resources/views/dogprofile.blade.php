@@ -23,5 +23,6 @@
 		<div>{{$dog->license_id}}</div>
 	</div>
 	<a href="/dog/edit/{{$dog->dog_id}}">Edit</a>
+	<a href="/delete/{{$dog->dog_id}}">Delete</a>
 @stop
 

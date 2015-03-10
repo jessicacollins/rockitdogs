@@ -35,6 +35,8 @@ Route::get('dogprofile/{dog_id}', 'DogController@getDog');
 Route::get('dog/edit/{dog_id}', 'DogController@showEdit');
 Route::POST('dog/edit/{dog_id}', 'DogController@edit');
 
+Route::get('/delete/{dog_id}', 'DogController@delete');
+
 Route::get('dogimage', function () {
 	return view('dogImage');
 });

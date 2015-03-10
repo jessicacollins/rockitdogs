@@ -78,4 +78,11 @@ class DogController extends Controller {
 
 	}
 
+	public function delete($dog_id) {
+		$sql = 'delete from dog where dog_id = :dog_id';
+		$delete_values = ['dog_id' => $dog_id];
+
+		$results = DB::select($sql, $delete_values);
+
+	}
 }
