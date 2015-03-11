@@ -17,9 +17,8 @@ class UserController extends Controller {
 	public function showProfile()
 	{
 		$u = Auth::user();
-		$results = $u->getMyDogs();
-		dd($results);
-		return view('userProfile', ['user'=>$u]);
+		$dogs = $u->getMyDogs();
+		return view('userProfile', ['user'=>$u,'dogs'=>$dogs]);
 	}
 
 	public function showEdit($user_id) {
