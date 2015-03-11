@@ -39,7 +39,7 @@ class UserController extends Controller {
 
 		$user->save();
 
-		return view('userProfile/' . $user_id);
+		return redirect('userprofile/' . $user_id);
 
 
 
