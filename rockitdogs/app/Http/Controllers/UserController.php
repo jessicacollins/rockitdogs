@@ -4,11 +4,9 @@ use Auth;
 use Request;
 use DB;
 // use App\Library\Sql;
-// use App\Models\User;
+ use App\User;
 
 class UserController extends Controller {
-
-
 	/**
 	 * Show the application dashboard to the user.
 	 *
@@ -22,7 +20,7 @@ class UserController extends Controller {
 	}
 
 	public function showEdit($user_id) {
-		$user = new User($user_id);
+		$user = Auth::user();
 		return view('editUser', ['user'=>$user]);
 	}
 
@@ -33,7 +31,7 @@ class UserController extends Controller {
 		$last_name = Request::input('last_name');
 		$email = Request::input('email');
 
-		$user = new User($user_id);
+		$user = Auth::user();
 		$user->first_name = $first_name;
 		$user->last_name = $last_name;
 		$user->email = $email;
@@ -46,11 +44,11 @@ class UserController extends Controller {
 
 	}
 
-	public function delete($user_id) {
+	// public function delete($user_id) {
 
-		$user = new User();
-		$user->delete();
-	}
+	// 	$user = Auth::user();
+	// 	$user->delete();
+	// }
 
 
 }
