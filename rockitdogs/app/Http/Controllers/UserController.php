@@ -25,4 +25,10 @@ class UserController extends Controller {
 		return view('editUser', ['user'=>$user]);
 	}
 
+	public function delete($user_id) {
+
+		$user = new User();
+		$user->delete();
+	}
+
 }
