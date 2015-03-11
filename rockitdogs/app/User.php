@@ -1,5 +1,7 @@
 <?php namespace App;
 
+use DB;
+use App\Models\Dog;
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Auth\Passwords\CanResetPassword;
@@ -32,4 +34,23 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 	 */
 	protected $hidden = ['password', 'remember_token'];
 
+
+	public function getMyDogs(){
+		$sql = 'select dog_id, user_id, name from dog join user using(user_id) where user_id = :user_id';
+		$sql_values = [
+			':user_id'=> $this->user_id
+		];
+		$results = DB::select($sql,$sql_values);
+		$dogs = [];
+		foreach($results as $dogdata){
+			$dog = new Dog();
+			$dog->name = $dogdata->name;
+			$dog->id = $dogdata->dog_id;
+			$dog->user_id = $dogdata->user_id;
+			$dogs[] = $dog;
+		}
+		return $dogs;
+	}
 }
+
+

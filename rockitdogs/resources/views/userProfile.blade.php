@@ -15,6 +15,8 @@
 			<img src="logo.jpg">	
 		</div>
 		<a href="/dog/add">Add Dog</a>
+
+		
 	</div>
 
 @stop
