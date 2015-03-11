@@ -1,8 +1,8 @@
 <?php
 
 namespace App\Models;
-use DB;
-use App\Library\Sql;
+// use DB;
+// use App\Library\Sql;
 
 
 class User extends Model {

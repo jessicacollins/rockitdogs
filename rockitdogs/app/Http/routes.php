@@ -46,9 +46,10 @@ Route::get('community', function () {
 });
 
 
-Route::get('edituser', function () {
-	return view('editUser');
-});
+Route::get('user/edit/{user_id}', 'UserController@showEdit');
+
+Route::post('user/edit/{user_id}', 'UserController@edit');
+
 
 Route::get('vet', function () {
 	return view('vet');
