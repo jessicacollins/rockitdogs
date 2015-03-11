@@ -3,8 +3,8 @@
 use Auth;
 use Request;
 use DB;
-use App\Library\Sql;
-use App\Models\User;
+// use App\Library\Sql;
+// use App\Models\User;
 
 class UserController extends Controller {
 
@@ -17,7 +17,8 @@ class UserController extends Controller {
 	public function showProfile()
 	{
 		$u = Auth::user();
-		return view('userProfile', ['user'=>$u]);
+		$dogs = $u->getMyDogs();
+		return view('userProfile', ['user'=>$u,'dogs'=>$dogs]);
 	}
 
 	public function showEdit($user_id) {
