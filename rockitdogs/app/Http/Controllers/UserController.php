@@ -45,5 +45,11 @@ class UserController extends Controller {
 
 	}
 
+	public function delete($user_id) {
+
+		$user = new User();
+		$user->delete();
+	}
+
 
 }
