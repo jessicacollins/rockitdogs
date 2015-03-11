@@ -25,14 +25,8 @@ class UserController extends Controller {
 		return view('editUser', ['user'=>$user]);
 	}
 
+
 	public function edit($user_id) {
-
-		// $user = new User(Request::input('user_id'));
-
-		// $user->first_name = Request::input('first_name');
-		// $user->last_name  = Request::input('last_name');
-		// $user->email      = Request::input('email');
-		// $user_id          = $user->save();
 
 		$first_name = Request::input('first_name');
 		$last_name = Request::input('last_name');
@@ -50,5 +44,6 @@ class UserController extends Controller {
 
 
 	}
+
 
 }
