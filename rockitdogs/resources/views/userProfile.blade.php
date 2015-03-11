@@ -3,7 +3,7 @@
 @section('main_content')
 <div class="userprofile">
 		<div class="user-profile-image" style="background-color:red">
-			<img src="logo.jpg" >
+			<img src="" >
 		</div>
 
 		<div>{{$user->first_name}}</div>
@@ -12,11 +12,11 @@
 		<a href="/user/edit/{{$user->user_id}}">Edit Profile</a>
 
 		<div class="dog-profile-pic" style="background-color:red">
-			<img src="logo.jpg">	
+			<img src="">	
 		</div>
 		<a href="/dog/add">Add Dog</a>
 		@foreach($dogs as $dog)
-			<div class="dog-image">
+			<div class="dog-image" style="background-image: url({{$dog->url}})">
 				<div class="profile-image">
 					<div class="dog-name">{{$dog->name}}</div>
 					

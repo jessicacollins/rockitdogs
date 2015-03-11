@@ -36,17 +36,24 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 
 
 	public function getMyDogs(){
-		$sql = 'select dog_id, user_id, name from dog join user using(user_id) where user_id = :user_id';
+		$sql = 'select url, dog.name, user.user_id, dog.dog_id, image.image_id 
+			from dog 
+			left join dog_image using (dog_id) 
+			left join image using (image_id) 
+			left join user using (user_id) 
+			where user_id = :user_id';
 		$sql_values = [
 			':user_id'=> $this->user_id
 		];
+		//dd($sql_values);
 		$results = DB::select($sql,$sql_values);
 		$dogs = [];
 		foreach($results as $dogdata){
 			$dog = new Dog();
 			$dog->name = $dogdata->name;
 			$dog->id = $dogdata->dog_id;
-			$dog->user_id = $dogdata->user_id;
+			$dog->user_id = $dogdata->user_id; 
+			$dog->url = $dogdata->url;
 			$dogs[] = $dog;
 		}
 		return $dogs;
