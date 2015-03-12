@@ -3,8 +3,10 @@
 @section('main_content')
 		<h1>Here you can edit your dog's profile</h1>
 		<div class="profile">
-			<form action="dog/edit/" method="POST">
+			<form action="" method="POST">
 				<input type="hidden" value="{{$dog->dog_id}}" name="dog_id">
+				<input type="hidden" value="{{$dog->user_id}}" name="user_id">
+				<input type="hidden" name="_token" value="{{csrf_token()}}">
 				<div>Dog Name:<input type="text" name="name" value="{{$dog->name}}"></div>
 				<div>Tagline:<input type="text" name="tagline" value="{{$dog->tagline}}"></div>
 				<div>Birthday:<input type="text" name="birthday" value="{{$dog->birthday}}"></div>

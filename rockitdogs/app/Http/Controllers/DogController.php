@@ -63,6 +63,16 @@ class DogController extends Controller {
 	}
 
 	public function edit($dog_id) {
+		$user_id = Request::input('user_id');
+		$name = Request::input('name');
+		$tagline = Request::input('tagline');
+		$birthday = Request::input('birthday');
+		$breed = Request::input('breed');
+		$gender = Request::input('gender');
+		$weight = Request::input('weight');
+		$temperament = Request::input('temperament');
+		$license_id = Request::input('license_id');
+
 		$dog = new Dog($dog_id);
 		$dog->user_id = $user_id;
 		$dog->name = $name;
