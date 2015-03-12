@@ -11,20 +11,21 @@
 		<div>{{$user->email}}</div>
 		<a href="/user/edit/{{$user->user_id}}">Edit Profile</a>
 
-		<div class="dog-profile-pic" style="background-color:red">
-			<img src="">	
-		</div>
+		
 		<a href="/dog/add">Add Dog</a>
+
 		@foreach($dogs as $dog)
-			<div class="dog-image" style="background-image: url({{$dog->url}})">
-				<div class="profile-image">
+
+			<a href="dogprofile/{{$dog->id}}">
+			<div class="dog-profile-image"  style="background-image: url({{$dog->url}})">
 					<div class="dog-name">{{$dog->name}}</div>
 					
 				</div>
 					
-				<div class="love"></div>
+				<div class="love-btn"></div>
 			<!-- 	<div class="comment-thread"></div> -->
-			</div>
+			
+			</a>
 
 
 		@endforeach

@@ -50,7 +50,7 @@ main {
 	padding: 0;
 	background: -webkit-linear-gradient(left, rgba(149,149,149,.9) 0%,rgba(13,13,13,.9) 46%,rgba(1,1,1,.9) 50%,rgba(10,10,10,.9) 53%,rgba(78,78,78,.9) 76%,rgba(56,56,56,.9) 87%,rgba(27,27,27,.9) 100%), url('/images/dogsmain.jpg');
 	background-size: contain;
-	height: 500px;
+	min-height: 500px;
 	text-align: center;
 }
 
@@ -110,5 +110,18 @@ footer img {
 	width: 50px;
 	margin-left: 5px;
 	padding-top: 15px;
+}
+
+.dog-profile-image{
+
+	background-color: green;
+	width: 300px;
+	height: 200px;
+	border: solid 2px black;
+	background-size: cover;
+}
+
+.userprofile{
+	margin: auto 0;
 }
 

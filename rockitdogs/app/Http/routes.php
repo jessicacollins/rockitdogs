@@ -30,7 +30,8 @@ Route::get('hometest', function () {
 Route::get('dog/add', 'DogController@addDogForm');
 Route::post('dog/add', 'DogController@addDog');
 
-Route::get('userprofile/{dog_id}', 'DogController@getDog');
+
+Route::get('dogprofile/{dog_id}', 'DogController@getDog');
 
 
 Route::get('dog/edit/{dog_id}', 'DogController@showEdit');

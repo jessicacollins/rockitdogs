@@ -51,7 +51,7 @@ class DogController extends Controller {
 	public function getDog($dog_id) {
 		$dog_id = new Dog($dog_id);
 
-		return view('userprofile', ['dog'=>$dog_id]);
+		return view('dogprofile', ['dog'=>$dog_id]);
 	}
 
 	public function showEdit($dog_id) {
