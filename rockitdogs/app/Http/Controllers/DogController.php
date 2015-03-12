@@ -55,6 +55,12 @@ class DogController extends Controller {
 		return view('dogprofile', ['dog'=>$dog]);
 
 	}
+	public function communityImages(){
+		$dog = new Dog();
+		$d = $dog->getAllImages();
+
+		return view('community', ['dog' => $d]);
+	}
 
 
 	public function showEdit($dog_id) {

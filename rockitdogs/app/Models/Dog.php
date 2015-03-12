@@ -20,4 +20,25 @@ class Dog extends Model {
 
 		return $url;
     }
+      public function getAllImages(){
+    	$sql = "select url, dog.name,dog.dog_id
+				from dog 
+				join dog_image using (dog_id)
+				join image using(image_id)
+				";
+		$results = DB::select($sql);
+
+		$dogs = [];
+		foreach($results as $dogdata){
+			$dog = new Dog();
+			$dog->name = $dogdata->name;
+			$dog->id = $dogdata->dog_id;
+			$dog->url = $dogdata->url;
+			$dogs[] = $dog;
+		}
+		
+		return $dogs;
+
+		
+    }
 }

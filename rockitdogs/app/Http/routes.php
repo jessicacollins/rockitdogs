@@ -43,9 +43,7 @@ Route::get('dogimage', function () {
 	return view('dogImage');
 });
 
-Route::get('community', function () {
-	return view('community');
-});
+Route::get('community', 'DogController@communityImages');
 
 
 Route::get('user/edit/{user_id}', 'UserController@showEdit');
