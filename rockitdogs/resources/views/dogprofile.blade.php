@@ -9,7 +9,7 @@
 	</div>
 	<div class="profile">
 		<div class="dogprofilepicture">
-			<img src="" alt="">
+			<img src="{{$dog->getImageUrl()}}" alt="">
 		</div>
 		<img src="" alt="">
 		<h3>Here is all of your dog's info</h3>

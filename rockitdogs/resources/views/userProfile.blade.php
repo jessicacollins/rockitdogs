@@ -16,7 +16,7 @@
 
 		@foreach($dogs as $dog)
 
-			<a href="dogprofile/{{$dog->id}}">
+			<a href="/dogprofile/{{$dog->id}}">
 			<div class="dog-profile-image"  style="background-image: url({{$dog->url}})">
 					<div class="dog-name">{{$dog->name}}</div>
 					
