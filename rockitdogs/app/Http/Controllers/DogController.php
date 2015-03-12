@@ -7,6 +7,7 @@ use Request;
 use DB;
 use App\Library\Sql;
 use App\Models\Dog;
+use App\Models\Love;
 
 class DogController extends Controller {
 
@@ -103,6 +104,12 @@ class DogController extends Controller {
 		$results = DB::delete($sql, $delete_values);
 
 		return redirect('userprofile/'. $user_id);
+	}
+
+	public function countLoves($image_id) {
+		$dog = new Dog();
+		$love = $dog->getImageLoveCount($image_id);
+		return $love;
 	}
 	
 }

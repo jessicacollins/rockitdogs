@@ -24,7 +24,6 @@ class UserController extends Controller {
 		return view('editUser', ['user'=>$user]);
 	}
 
-
 	public function edit($user_id) {
 
 		$first_name = Request::input('first_name');
@@ -35,20 +34,17 @@ class UserController extends Controller {
 		$user->first_name = $first_name;
 		$user->last_name = $last_name;
 		$user->email = $email;
-
 		$user->save();
-
 		return redirect('userprofile/' . $user_id);
-
-
 
 	}
 
-	// public function delete($user_id) {
+	public function addLove($image_id) {
+		$user = Auth::user();
+		$user->addLove($image_id);
 
-	// 	$user = Auth::user();
-	// 	$user->delete();
-	// }
+		return redirect('community');
+	}
 
 
 }

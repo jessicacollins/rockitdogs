@@ -45,11 +45,13 @@ Route::get('dogimage', function () {
 
 Route::get('community', 'DogController@communityImages');
 
+Route::get('community/addlove/{image_id}', 'UserController@addLove');
 
 Route::get('user/edit/{user_id}', 'UserController@showEdit');
 
 Route::post('user/edit/{user_id}', 'UserController@edit');
 
+Route::get('test/{image_id}', 'DogController@countLoves');
 
 Route::get('vet', function () {
 	return view('vet');

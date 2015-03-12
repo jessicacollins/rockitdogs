@@ -40,6 +40,21 @@ class Dog extends Model {
 		
 		return $dogs;
 
-		
     }
+
+    public function getImageLoveCount($image_id) {
+    	$sql = '
+			select count(*) as count
+			from love
+			where image_id = :image_id;
+    		';
+
+		$sql_values = [':image_id' => $image_id];
+		$results = DB::select($sql, $sql_values);
+
+
+
+		return $results[0]->count;
+    }
+    
 }
