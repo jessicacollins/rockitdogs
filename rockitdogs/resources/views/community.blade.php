@@ -1,8 +1,8 @@
 @extends('layout')
 
 @section('main_content')
-@foreach($dog as $d)
 	<div class="community-grid">
+@foreach($dog as $d)
 
 		<div class="dog-image" style="background-image: url({{$d->url}})">
 			<div>{{$d->name}}</div>
@@ -10,6 +10,6 @@
 		
 		</div>
 		
-	</div>
 @endforeach
+	</div>
 @stop

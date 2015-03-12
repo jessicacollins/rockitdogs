@@ -119,9 +119,18 @@ footer img {
 	height: 200px;
 	border: solid 2px black;
 	background-size: cover;
+	margin: 0 auto;	
+	margin-top: 20px;
 }
 
 .userprofile{
 	margin: auto 0;
 }
 
+.dog-image-wrapper {
+	margin-top: 50px;
+}
+
+.user-data {
+	margin-top: 20px;
+}

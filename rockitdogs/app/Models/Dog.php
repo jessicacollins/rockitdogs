@@ -25,6 +25,7 @@ class Dog extends Model {
 				from dog 
 				join dog_image using (dog_id)
 				join image using(image_id)
+				order by rand()
 				";
 		$results = DB::select($sql);
 
