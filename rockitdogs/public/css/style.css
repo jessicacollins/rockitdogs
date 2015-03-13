@@ -134,7 +134,13 @@ footer img {
 .user-data {
 	margin-top: 20px;
 }
+
 a{
 	text-decoration: none;
 	color: white;
 }
+
+a:hover{
+	background-color: #333;
+}
+
