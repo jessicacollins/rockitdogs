@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="/css/normalize.css">
 	<link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="/css/community.css">
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 </head>
 <body>
 	<header>
@@ -53,5 +54,6 @@
 				</div>
 			</footer>
 		@show
+	<script src="/js/script.js"></script>
 </body>
 </html>

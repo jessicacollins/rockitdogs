@@ -4,7 +4,7 @@
 	<div class="community-grid">
 @foreach($dog as $d)
 
-		<div class="dog-image" style="background-image: url({{$d->url}})">
+		<div class="dog-image" style="background-image: url({{$d->url}})" data-image-id="{{$d->image_id}}">
 			<div>{{$d->name}}</div>
 			<div class="love"></div>
 		

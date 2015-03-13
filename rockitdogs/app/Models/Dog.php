@@ -21,7 +21,7 @@ class Dog extends Model {
 		return $url;
     }
       public function getAllImages(){
-    	$sql = "select url, dog.name,dog.dog_id
+    	$sql = "select url, dog.name, image.image_id, dog.dog_id
 				from dog 
 				join dog_image using (dog_id)
 				join image using(image_id)
@@ -35,6 +35,7 @@ class Dog extends Model {
 			$dog->name = $dogdata->name;
 			$dog->id = $dogdata->dog_id;
 			$dog->url = $dogdata->url;
+			$dog->image_id = $dogdata->image_id;
 			$dogs[] = $dog;
 		}
 		

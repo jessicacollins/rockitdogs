@@ -109,7 +109,7 @@ class DogController extends Controller {
 	public function countLoves($image_id) {
 		$dog = new Dog();
 		$love = $dog->getImageLoveCount($image_id);
-		return $love;
+		return ['count' => $love];
 	}
 	
 }
