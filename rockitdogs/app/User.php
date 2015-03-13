@@ -59,19 +59,10 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 		return $dogs;
 	}
 
-// todo handle case of multiple love on same image from same user
-	public function addLove($image_id) {
-		$sql = '
-			insert into love 
-			(image_id, user_id)
-			values (:image_id, :user_id)
-			';
-
-		$sql_values = [':image_id' => $image_id, ':user_id' => $this->user_id];
-		
-		DB::insert($sql, $sql_values);
-
+	public function GetUserId(){
+		return $this->id;
 	}
+
 
 }
 

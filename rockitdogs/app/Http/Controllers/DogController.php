@@ -111,5 +111,20 @@ class DogController extends Controller {
 		$love = $dog->getImageLoveCount($image_id);
 		return ['count' => $love];
 	}
+
+	public function addLove($image_id) {
+
+		$user = Auth::user();
+		$user_id = Auth::id();
+		// $user->addLove($image_id);
+		$dog = new Dog();
+
+		$dog->addLove($user_id,$image_id);
+
+		$love = $dog->getImageLoveCount($image_id);
+
+		return ['count' => $love];
+		//return redirect('community');
+	}
 	
 }

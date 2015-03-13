@@ -134,3 +134,7 @@ footer img {
 .user-data {
 	margin-top: 20px;
 }
+a{
+	text-decoration: none;
+	color: white;
+}

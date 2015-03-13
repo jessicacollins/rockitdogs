@@ -57,5 +57,19 @@ class Dog extends Model {
 
 		return $results[0]->count;
     }
+
+    // todo handle case of multiple love on same image from same user
+	public function addLove($user_id, $image_id) {
+		$sql = '
+			insert into love 
+			(image_id, user_id)
+			values (:image_id, :user_id)
+			';
+
+		$sql_values = [':image_id' => $image_id, ':user_id' => $user_id];
+		
+		DB::insert($sql, $sql_values);
+
+	}
     
 }

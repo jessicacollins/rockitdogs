@@ -45,7 +45,7 @@ Route::get('dogimage', function () {
 
 Route::get('community', 'DogController@communityImages');
 
-Route::get('community/addlove/{image_id}', 'UserController@addLove');
+Route::get('community/addlove/{image_id}', 'DogController@addLove');
 
 Route::get('user/edit/{user_id}', 'UserController@showEdit');
 

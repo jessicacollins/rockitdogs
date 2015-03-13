@@ -39,17 +39,9 @@ class UserController extends Controller {
 
 	}
 
-	public function addLove($image_id) {
-		$user = Auth::user();
-		$user->addLove($image_id);
-
-		return redirect('community');
-	}
-
 	public function getLoves($image_id) {
 		$user = Auth::user();
 		return $user->getLoves($image_id);
 	}
-
 
 }
