@@ -7,7 +7,7 @@ $(function() {
 		console.log(image_id);	
 
 
-		$.ajax({ url: 'test/' + image_id,
+		$.ajax({ url: 'community/addlove/' + image_id,
 	        type: 'get',
 	        success: function(data) {
 	         	$(self).html(data.count);
